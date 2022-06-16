@@ -82,10 +82,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		95FB1E30285B758300EA18C1 = {
+		951BB9B7285B836A0086C912 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				951BB9B5285B7E490086C912 /* Cadastre.storyboard */,
+				95FB1E42285B758300EA18C1 /* Main.storyboard */,
+				95FB1E4A285B758300EA18C1 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		951BB9B8285B837B0086C912 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95FB1E40285B758300EA18C1 /* ViewController.swift */,
+				951BB9B3285B7E1B0086C912 /* CadastreController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		951BB9B9285B83F80086C912 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95FB1E30285B758300EA18C1 = {
+			isa = PBXGroup;
+			children = (
 				95FB1E3B285B758300EA18C1 /* HelloWord */,
 				95FB1E55285B758300EA18C1 /* HelloWordTests */,
 				95FB1E5F285B758300EA18C1 /* HelloWordUITests */,
@@ -106,13 +131,12 @@
 		95FB1E3B285B758300EA18C1 /* HelloWord */ = {
 			isa = PBXGroup;
 			children = (
+				951BB9B9285B83F80086C912 /* Model */,
+				951BB9B8285B837B0086C912 /* Controller */,
+				951BB9B7285B836A0086C912 /* View */,
 				95FB1E3C285B758300EA18C1 /* AppDelegate.swift */,
 				95FB1E3E285B758300EA18C1 /* SceneDelegate.swift */,
-				95FB1E40285B758300EA18C1 /* ViewController.swift */,
-				951BB9B3285B7E1B0086C912 /* CadastreController.swift */,
-				95FB1E42285B758300EA18C1 /* Main.storyboard */,
 				95FB1E48285B758300EA18C1 /* Assets.xcassets */,
-				95FB1E4A285B758300EA18C1 /* LaunchScreen.storyboard */,
 				95FB1E4D285B758300EA18C1 /* Info.plist */,
 				95FB1E45285B758300EA18C1 /* HelloWord.xcdatamodeld */,
 			);
