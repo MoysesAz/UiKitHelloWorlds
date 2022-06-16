@@ -18,7 +18,17 @@ class CadastreController: UIViewController {
     @IBOutlet weak var AgeField: UITextField!
     @IBOutlet weak var TittleAgeField: UILabel!
 
-    
+    weak var delegateCadastre: CadastreControllerDelegate?
+
+    @IBAction func buttonCadastro(_ sender: Any) {
+        guard self.nameField.text != nil else {
+            return
+        }
+
+        delegateCadastre?.send(text: self.nameField.text!)
+        self.navigationController?.popViewController(animated: true)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
