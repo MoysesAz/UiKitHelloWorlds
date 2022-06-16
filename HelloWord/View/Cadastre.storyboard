@@ -57,19 +57,28 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nu3-LO-iOZ">
+                                <rect key="frame" x="145" y="437.5" width="124" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Cadastro"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="OQD-wg-CF0" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="3Pn-P9-F5W"/>
+                            <constraint firstItem="Nu3-LO-iOZ" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0345982" id="6jc-Bw-kI9"/>
                             <constraint firstItem="OQD-wg-CF0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="7q5-N7-VmY"/>
                             <constraint firstItem="Bww-T0-eY5" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.9" id="FmF-3I-l8D"/>
                             <constraint firstItem="WZW-RL-wBv" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0719866" id="Q0y-wn-F6w"/>
                             <constraint firstItem="Bww-T0-eY5" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="QKx-VT-lTw"/>
                             <constraint firstItem="Bww-T0-eY5" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0719866" id="TbH-DR-VEq"/>
                             <constraint firstItem="Bww-T0-eY5" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.8" id="X8J-Jq-zdD"/>
+                            <constraint firstItem="Nu3-LO-iOZ" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="bWn-Bh-1Cp"/>
                             <constraint firstItem="WZW-RL-wBv" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="dZL-CH-xie"/>
+                            <constraint firstItem="Nu3-LO-iOZ" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="l0C-Il-qqI"/>
                             <constraint firstItem="OQD-wg-CF0" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0491071" id="nRX-aa-Wkt"/>
+                            <constraint firstItem="Nu3-LO-iOZ" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.3" id="rTR-PH-fcO"/>
                             <constraint firstItem="WZW-RL-wBv" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.9" id="wqv-ZN-3TP"/>
                             <constraint firstItem="OQD-wg-CF0" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="xuQ-kb-lqr"/>
                             <constraint firstItem="WZW-RL-wBv" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.5" id="y0G-Ui-oVz"/>
