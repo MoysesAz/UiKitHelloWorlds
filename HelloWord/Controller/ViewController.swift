@@ -17,20 +17,23 @@ class ViewController: UIViewController {
     @IBAction func buttonAction(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Cadastre", bundle: nil)
         let secondVC = storyboard.instantiateViewController(identifier:"Cadastre") as! CadastreController
+        secondVC.delegateCadastre = self
         self.navigationController?.pushViewController(secondVC, animated: true)
 
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         guard self.name != nil else {
             return
         }
         self.nameUser.text = self.name
-
-        // Do any additional setup after loading the view.
     }
-
 
 }
 
