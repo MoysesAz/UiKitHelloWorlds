@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CadastreControllerDelegate: AnyObject {
+    func send(text: String)
+}
+
 class CadastreController: UIViewController {
 
     @IBOutlet weak var tittleNameField: UILabel!
@@ -14,7 +18,7 @@ class CadastreController: UIViewController {
     @IBOutlet weak var AgeField: UITextField!
     @IBOutlet weak var TittleAgeField: UILabel!
 
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
