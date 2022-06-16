@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951BB9B4285B7E1B0086C912 /* CadastreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951BB9B3285B7E1B0086C912 /* CadastreController.swift */; };
+		951BB9B6285B7E490086C912 /* Cadastre.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951BB9B5285B7E490086C912 /* Cadastre.storyboard */; };
 		95FB1E3D285B758300EA18C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FB1E3C285B758300EA18C1 /* AppDelegate.swift */; };
 		95FB1E3F285B758300EA18C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FB1E3E285B758300EA18C1 /* SceneDelegate.swift */; };
 		95FB1E41285B758300EA18C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FB1E40285B758300EA18C1 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		951BB9B3285B7E1B0086C912 /* CadastreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastreController.swift; sourceTree = "<group>"; };
+		951BB9B5285B7E490086C912 /* Cadastre.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cadastre.storyboard; sourceTree = "<group>"; };
 		95FB1E39285B758300EA18C1 /* HelloWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FB1E3C285B758300EA18C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FB1E3E285B758300EA18C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		95FB1E30285B758300EA18C1 = {
 			isa = PBXGroup;
 			children = (
+				951BB9B5285B7E490086C912 /* Cadastre.storyboard */,
 				95FB1E3B285B758300EA18C1 /* HelloWord */,
 				95FB1E55285B758300EA18C1 /* HelloWordTests */,
 				95FB1E5F285B758300EA18C1 /* HelloWordUITests */,
@@ -104,6 +109,7 @@
 				95FB1E3C285B758300EA18C1 /* AppDelegate.swift */,
 				95FB1E3E285B758300EA18C1 /* SceneDelegate.swift */,
 				95FB1E40285B758300EA18C1 /* ViewController.swift */,
+				951BB9B3285B7E1B0086C912 /* CadastreController.swift */,
 				95FB1E42285B758300EA18C1 /* Main.storyboard */,
 				95FB1E48285B758300EA18C1 /* Assets.xcassets */,
 				95FB1E4A285B758300EA18C1 /* LaunchScreen.storyboard */,
@@ -235,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95FB1E4C285B758300EA18C1 /* LaunchScreen.storyboard in Resources */,
+				951BB9B6285B7E490086C912 /* Cadastre.storyboard in Resources */,
 				95FB1E49285B758300EA18C1 /* Assets.xcassets in Resources */,
 				95FB1E44285B758300EA18C1 /* Main.storyboard in Resources */,
 			);
@@ -264,6 +271,7 @@
 				95FB1E41285B758300EA18C1 /* ViewController.swift in Sources */,
 				95FB1E3D285B758300EA18C1 /* AppDelegate.swift in Sources */,
 				95FB1E47285B758300EA18C1 /* HelloWord.xcdatamodeld in Sources */,
+				951BB9B4285B7E1B0086C912 /* CadastreController.swift in Sources */,
 				95FB1E3F285B758300EA18C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
