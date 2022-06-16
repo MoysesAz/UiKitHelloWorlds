@@ -9,6 +9,12 @@ import UIKit
 
 class CadastreController: UIViewController {
 
+    @IBOutlet weak var tittleNameField: UILabel!
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var AgeField: UITextField!
+    @IBOutlet weak var TittleAgeField: UILabel!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
