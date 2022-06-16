@@ -61,6 +61,9 @@
                                 <rect key="frame" x="145" y="437.5" width="124" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Cadastro"/>
+                                <connections>
+                                    <action selector="buttonCadastro:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wmK-sR-R3s"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
