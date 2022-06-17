@@ -9,7 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBAction func buttonScene1(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Scene1", bundle: nil)
 
+        let secondVC = storyboard.instantiateViewController(identifier:"Scene1") as! Scene1Controller
+
+        self.navigationController?.pushViewController(secondVC, animated: true)
     }
 
     @IBAction func buttonScene2(_ sender: Any) {
