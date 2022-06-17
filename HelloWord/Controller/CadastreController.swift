@@ -8,23 +8,26 @@
 import UIKit
 
 protocol CadastreControllerDelegate: AnyObject {
-    func send(text: String)
+    func send(name: String, age: String)
 }
 
 class CadastreController: UIViewController {
 
     @IBOutlet weak var tittleNameField: UILabel!
     @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var AgeField: UITextField!
+    @IBOutlet weak var ageField: UITextField!
     @IBOutlet weak var TittleAgeField: UILabel!
 
     weak var delegateCadastre: CadastreControllerDelegate?
 
     @IBAction func buttonCadastro(_ sender: Any) {
         guard self.nameField.text != nil else { return }
-        if self.nameField.text! != "Name" {
-            delegateCadastre?.send(text: self.nameField.text!)
+        guard self.ageField.text != nil else { return }
+
+        if self.nameField.text! != "Name" && self.ageField.text! != "Age"{
+            delegateCadastre?.send(name: self.nameField.text!, age: self.ageField.text!)
         }
+
         self.navigationController?.popViewController(animated: true)
     }
 
