@@ -4,8 +4,11 @@ Esse projeto é um modelo simples de passagem de informações entre telas atrav
 
 
 ## Resultado:
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+<div align="center">
+<img src="imagesReadme/Scene_1.png" width="300">
+<img src="imagesReadme/Scene_2.png" width="300">
+<img src="imagesReadme/Scene_3.png" width="300">
+</div> 
 
 ## Implementação:
 ### Crie duas classes:
