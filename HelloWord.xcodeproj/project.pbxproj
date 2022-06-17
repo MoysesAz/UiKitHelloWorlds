@@ -90,6 +90,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		951ADF51285D12F400584D98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				951ADF43285CE08E00584D98 /* Scene1.storyboard */,
+				951ADF45285CE09F00584D98 /* Scene2.storyboard */,
+				951ADF47285CE0AE00584D98 /* Scene3.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		951ADF52285D12FC00584D98 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				95FB1E40285B758300EA18C1 /* ViewController.swift */,
+				951ADF4B285D0C6500584D98 /* Scene1Controller.swift */,
+				951ADF4D285D0FD500584D98 /* Scene2Controller.swift */,
+				951ADF4F285D0FE900584D98 /* Scene3Controller.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
 		95FB1E30285B758300EA18C1 = {
 			isa = PBXGroup;
 			children = (
@@ -113,16 +134,11 @@
 		95FB1E3B285B758300EA18C1 /* HelloWord */ = {
 			isa = PBXGroup;
 			children = (
+				951ADF52285D12FC00584D98 /* Control */,
+				951ADF51285D12F400584D98 /* View */,
 				95FB1E3C285B758300EA18C1 /* AppDelegate.swift */,
 				95FB1E3E285B758300EA18C1 /* SceneDelegate.swift */,
-				95FB1E40285B758300EA18C1 /* ViewController.swift */,
-				951ADF4B285D0C6500584D98 /* Scene1Controller.swift */,
-				951ADF4D285D0FD500584D98 /* Scene2Controller.swift */,
-				951ADF4F285D0FE900584D98 /* Scene3Controller.swift */,
 				95FB1E42285B758300EA18C1 /* Main.storyboard */,
-				951ADF43285CE08E00584D98 /* Scene1.storyboard */,
-				951ADF45285CE09F00584D98 /* Scene2.storyboard */,
-				951ADF47285CE0AE00584D98 /* Scene3.storyboard */,
 				95FB1E48285B758300EA18C1 /* Assets.xcassets */,
 				95FB1E4A285B758300EA18C1 /* LaunchScreen.storyboard */,
 				95FB1E4D285B758300EA18C1 /* Info.plist */,
