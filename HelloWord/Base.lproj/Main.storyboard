@@ -22,14 +22,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywm-dv-42d">
-                                <rect key="frame" x="124" y="459.5" width="166" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Scene 3"/>
-                                <connections>
-                                    <action selector="buttonScene3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ve-iu-Zbw"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShS-dg-bf0">
                                 <rect key="frame" x="124" y="269.5" width="166" height="31"/>
                                 <state key="normal" title="Button"/>
@@ -43,7 +35,15 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Scene 2"/>
                                 <connections>
-                                    <action selector="buttonSecen2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eQX-gV-c8e"/>
+                                    <action selector="buttonScene2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9SD-ZS-Dab"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywm-dv-42d">
+                                <rect key="frame" x="124" y="459.5" width="166" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Scene 3"/>
+                                <connections>
+                                    <action selector="buttonScene3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ve-iu-Zbw"/>
                                 </connections>
                             </button>
                         </subviews>
