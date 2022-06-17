@@ -5,9 +5,9 @@ Esse projeto é um modelo simples de passagem de informações entre telas atrav
 
 ## Resultado:
 <div align="center">
-<img src="imagesReadme/Scene_1.png" width="300">
-<img src="imagesReadme/Scene_2.png" width="300">
-<img src="imagesReadme/Scene_3.png" width="300">
+<img src="imagesReadme/Scene_1.png" width="250">
+<img src="imagesReadme/Scene_2.png" width="250">
+<img src="imagesReadme/Scene_3.png" width="250">
 </div> 
 
 ## Implementação:
