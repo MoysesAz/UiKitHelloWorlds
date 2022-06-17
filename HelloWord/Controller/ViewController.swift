@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var ageUser: UILabel!
     @IBOutlet weak var button: UIButton!
     var name: String?
+    var age: String?
+
 
 
     @IBAction func buttonAction(_ sender: Any) {
@@ -32,15 +34,23 @@ class ViewController: UIViewController {
         guard self.name != nil else {
             return
         }
+        guard self.age != nil else {
+            return
+        }
         self.nameUser.text = self.name
+        self.ageUser.text = self.age
+
     }
 
 }
 
 extension ViewController: CadastreControllerDelegate {
-    func send(text: String) {
-        self.name = text
+    func send(name: String, age: String) {
+        self.name = name
+        self.age = age
     }
+
+
 
 
 }
