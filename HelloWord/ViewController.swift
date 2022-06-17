@@ -8,6 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func buttonScene1(_ sender: Any) {
+
+    }
+
+    @IBAction func buttonScene2(_ sender: Any) {
+
+    }
+
+    @IBAction func buttonSecen2(_ sender: Any) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
