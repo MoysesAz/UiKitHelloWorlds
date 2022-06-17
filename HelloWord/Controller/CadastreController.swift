@@ -21,11 +21,10 @@ class CadastreController: UIViewController {
     weak var delegateCadastre: CadastreControllerDelegate?
 
     @IBAction func buttonCadastro(_ sender: Any) {
-        guard self.nameField.text != nil else {
-            return
+        guard self.nameField.text != nil else { return }
+        if self.nameField.text! != "Name" {
+            delegateCadastre?.send(text: self.nameField.text!)
         }
-
-        delegateCadastre?.send(text: self.nameField.text!)
         self.navigationController?.popViewController(animated: true)
     }
 
