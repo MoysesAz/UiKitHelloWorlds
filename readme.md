@@ -19,12 +19,12 @@ class Scene1Controller: UIViewController {
 ```
 
 <div align="center">
-<img src="imagesReadme/Scene6.png" width="400">
+<img src="imagesReadme/Scene1.png" width="400">
 </div>  
 
 - Após isso você precisa criar duas referências na view que está dentro da Storyboard - B: a primeira é a controller; a segunda é criar um ID.
 <div align="center">
-<img src="imagesReadme/Scene1.png" width="400">
+<img src="imagesReadme/Scene2.png" width="400">
 </div>  
 
 ## Instanciando a Storyboard
@@ -41,7 +41,7 @@ let secondVC = storyboard.instantiateViewController(identifier:"Scene1") as! Sce
 A view da storyboard Main foi criada com um NavigationController e 3 botões. Cada botão chama uma view diferente através de três funções: buttonScene1(), buttonScene1(), buttonScene3().
 
 <div align="center">
-<img src="imagesReadme/Scene2.png" width="400">
+<img src="imagesReadme/Scene3.png" width="400">
 </div>  
 
 
@@ -51,13 +51,13 @@ Agora que temos nossa ViewController instanciada com as caracteristicas da view 
 ### NavigationController?.popViewController
 Funciona como uma pilha de Views. Uma sobre a outra.
 <div align="center">
-<img src="imagesReadme/Scene5.png" width="400">
+<img src="imagesReadme/Scene4.png" width="400">
 </div>  
 
 ```swift
-@IBAction func buttonScene2(_ sender: Any) {
-    let storyboard = UIStoryboard(name: "Scene3", bundle: nil)
-    let secondVC = storyboard.instantiateViewController(identifier:"Scene3") as! Scene3Controller
+@IBAction func buttonScene1(_ sender: Any) {
+    let storyboard = UIStoryboard(name: "Scene1", bundle: nil)
+    let secondVC = storyboard.instantiateViewController(identifier:"Scene1") as! Scene1Controller
     self.navigationController?.pushViewController(secondVC, animated: true)
 //  self.navigationController?.popViewController(animated: true)
 }
@@ -69,13 +69,13 @@ Funciona como uma pilha de Views. Uma sobre a outra.
 - Um modal se sobrepõe a views chamadas por uma navigationController
 
 <div align="center">
-<img src="imagesReadme/Scene3.png" width="400">
+<img src="imagesReadme/Scene5.png" width="400">
 </div>  
 
 ```swift
-@IBAction func buttonScene1(_ sender: Any) {
-    let storyboard = UIStoryboard(name: "Scene1", bundle: nil)
-    let secondVC = storyboard.instantiateViewController(identifier:"Scene1") as! Scene1Controller
+@IBAction func buttonScene2(_ sender: Any) {
+    let storyboard = UIStoryboard(name: "Scene2", bundle: nil)
+    let secondVC = storyboard.instantiateViewController(identifier:"Scene2") as! Scene2Controller
     self.present(secondVC, animated: true)
 //  self.dismiss(animated: true)
 }
@@ -87,14 +87,14 @@ Seu comportamento é conveniente a existência NavigationController.
 - Não existindo Navigation: Ela chama como a Present.
 
 <div align="center">
-<img src="imagesReadme/Scene4.png" width="400">
+<img src="imagesReadme/Scene6.png" width="400">
 </div>
 
  
 ```swift
 @IBAction func buttonScene3(_ sender: Any) {
-    let storyboard = UIStoryboard(name: "Scene2", bundle: nil)
-    let secondVC = storyboard.instantiateViewController(identifier:"Scene2") as! Scene2Controller
+    let storyboard = UIStoryboard(name: "Scene3", bundle: nil)
+    let secondVC = storyboard.instantiateViewController(identifier:"Scene3") as! Scene3Controller
     self.show(secondVC, sender: true)
 //  if self.navigationController != nil {
 //      self.navigationController?.popViewController(animated: true)
@@ -107,4 +107,3 @@ Seu comportamento é conveniente a existência NavigationController.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
-
