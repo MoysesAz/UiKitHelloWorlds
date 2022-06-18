@@ -1,3 +1,5 @@
+# Navigation
+
 Esse projeto busca mostrar como funciona algumas formas de  navegação entre views usando ViewCode e Storyboard. 
 
 ## Problemas de navegação enfrentados ao trabalhar com Storyboard.
@@ -23,8 +25,6 @@ class Scene1Controller: UIViewController {
 </div>  
 
 
-
-
 - Após isso você precisa criar duas referências na view que está dentro da Storyboard - B: a primeira é a controller; a segunda é criar um ID.
 
 - Imagem das referencias
@@ -39,12 +39,13 @@ let storyboard = UIStoryboard(name: "Scene1", bundle: nil)
 let secondVC = storyboard.instantiateViewController(identifier:"Scene1") as! Scene1Controller
 ```
 
-## Tipos de Navegação e seus respectivos encerramentos
+## Tipos de navegação e seus respectivos encerramentos
 A view da storyboard Main foi criada com um NavigationController e 3 botões. Cada botão chama uma view diferente através de três funções: buttonScene1(), buttonScene1(), buttonScene3().
 
 
 Agora que temos nossa ViewController instanciada com as caracteristicas da view da nossa Storyboard, existem algumas formas de chamá-la.
 
+#### Encerramentos estão como comentários (Precedidos de //).
 
 ### NavigationController?.popViewController
 Funciona como uma pilha de Views. Uma sobre a outra.
