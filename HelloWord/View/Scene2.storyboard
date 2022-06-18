@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="Scene2" id="Y6W-OH-hqX" customClass="Scene2Controller" customModule="HelloWord" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scene 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORv-YX-RGk">
-                                <rect key="frame" x="128.5" y="426" width="157" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scene 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORv-YX-RGk">
+                                <rect key="frame" x="97.666666666666686" y="401.66666666666669" width="195" height="50.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -26,10 +26,10 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
-                            <constraint firstItem="ORv-YX-RGk" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="Co7-Lz-GoZ"/>
-                            <constraint firstItem="ORv-YX-RGk" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0602679" id="Ej7-gI-YOi"/>
-                            <constraint firstItem="ORv-YX-RGk" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.379227" id="QzK-Ce-2hv"/>
-                            <constraint firstItem="ORv-YX-RGk" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="nk4-R5-pqG"/>
+                            <constraint firstItem="ORv-YX-RGk" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="bAh-jB-gDS"/>
+                            <constraint firstItem="ORv-YX-RGk" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0602679" id="kUy-tS-cj2"/>
+                            <constraint firstItem="ORv-YX-RGk" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.5" id="kfM-ur-PtC"/>
+                            <constraint firstItem="ORv-YX-RGk" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="uh4-ko-cTI"/>
                         </constraints>
                     </view>
                 </viewController>

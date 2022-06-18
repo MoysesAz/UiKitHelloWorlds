@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="Scene3" id="Y6W-OH-hqX" customClass="Scene3Controller" customModule="HelloWord" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scene 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nz2-KU-KkR">
-                                <rect key="frame" x="124" y="426" width="166" height="54"/>
+                                <rect key="frame" x="97.666666666666686" y="401.66666666666669" width="195" height="50.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -26,10 +26,10 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
-                            <constraint firstItem="nz2-KU-KkR" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="8AB-f6-WPR"/>
-                            <constraint firstItem="nz2-KU-KkR" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.4" id="IJx-76-7j3"/>
-                            <constraint firstItem="nz2-KU-KkR" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="OxP-WC-f6e"/>
-                            <constraint firstItem="nz2-KU-KkR" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0602679" id="k2z-8C-9Hp"/>
+                            <constraint firstItem="nz2-KU-KkR" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="EjA-H7-Kb7"/>
+                            <constraint firstItem="nz2-KU-KkR" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="dxc-R0-UFd"/>
+                            <constraint firstItem="nz2-KU-KkR" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.5" id="fn3-86-5Mu"/>
+                            <constraint firstItem="nz2-KU-KkR" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.0602679" id="ftu-Ka-Jsj"/>
                         </constraints>
                     </view>
                 </viewController>
