@@ -1,5 +1,3 @@
-# Navigation
-
 Esse projeto busca mostrar como funciona algumas formas de  navegação entre views usando ViewCode e Storyboard. 
 
 ## Problemas de navegação enfrentados ao trabalhar com Storyboard.
@@ -20,14 +18,14 @@ class Scene1Controller: UIViewController {
     }
 ```
 
-<div align="left">
-<img src="imagesReadme/Scene1.png" width="400">
+<div align="center">
+<img src="imagesReadme/Scene6.png" width="400">
 </div>  
 
-
 - Após isso você precisa criar duas referências na view que está dentro da Storyboard - B: a primeira é a controller; a segunda é criar um ID.
-
-- Imagem das referencias
+<div align="center">
+<img src="imagesReadme/Scene1.png" width="400">
+</div>  
 
 ## Instanciando a Storyboard
 
@@ -39,16 +37,22 @@ let storyboard = UIStoryboard(name: "Scene1", bundle: nil)
 let secondVC = storyboard.instantiateViewController(identifier:"Scene1") as! Scene1Controller
 ```
 
-## Tipos de navegação e seus respectivos encerramentos
+## Tipos de Navegação e seus respectivos encerramentos
 A view da storyboard Main foi criada com um NavigationController e 3 botões. Cada botão chama uma view diferente através de três funções: buttonScene1(), buttonScene1(), buttonScene3().
+
+<div align="center">
+<img src="imagesReadme/Scene2.png" width="400">
+</div>  
 
 
 Agora que temos nossa ViewController instanciada com as caracteristicas da view da nossa Storyboard, existem algumas formas de chamá-la.
 
-#### Encerramentos estão como comentários (Precedidos de //).
 
 ### NavigationController?.popViewController
 Funciona como uma pilha de Views. Uma sobre a outra.
+<div align="center">
+<img src="imagesReadme/Scene5.png" width="400">
+</div>  
 
 ```swift
 @IBAction func buttonScene2(_ sender: Any) {
@@ -64,6 +68,10 @@ Funciona como uma pilha de Views. Uma sobre a outra.
 - Um modal não se sobrepoe a outra.
 - Um modal se sobrepõe a views chamadas por uma navigationController
 
+<div align="center">
+<img src="imagesReadme/Scene3.png" width="400">
+</div>  
+
 ```swift
 @IBAction func buttonScene1(_ sender: Any) {
     let storyboard = UIStoryboard(name: "Scene1", bundle: nil)
@@ -77,6 +85,10 @@ Funciona como uma pilha de Views. Uma sobre a outra.
 Seu comportamento é conveniente a existência NavigationController.
 - Existindo NavigationController: Ela chama como a NavigationController?.popViewController
 - Não existindo Navigation: Ela chama como a Present.
+
+<div align="center">
+<img src="imagesReadme/Scene4.png" width="400">
+</div>
 
  
 ```swift
@@ -95,3 +107,4 @@ Seu comportamento é conveniente a existência NavigationController.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
