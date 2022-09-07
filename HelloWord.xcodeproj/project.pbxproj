@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		951BB9B4285B7E1B0086C912 /* CadastreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951BB9B3285B7E1B0086C912 /* CadastreController.swift */; };
-		951BB9B6285B7E490086C912 /* Cadastre.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 951BB9B5285B7E490086C912 /* Cadastre.storyboard */; };
+		95EA530828C8D9200006FD56 /* ReferenceConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EA530728C8D9200006FD56 /* ReferenceConstraints.swift */; };
+		95EA530A28C8D94C0006FD56 /* PropertyViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EA530928C8D94C0006FD56 /* PropertyViewAnimator.swift */; };
+		95EA530C28C8D96F0006FD56 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EA530B28C8D96F0006FD56 /* Snap.swift */; };
+		95EA530E28C8D9850006FD56 /* Gravity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EA530D28C8D9850006FD56 /* Gravity.swift */; };
+		95EA531028C8D9B00006FD56 /* Collision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EA530F28C8D9B00006FD56 /* Collision.swift */; };
 		95FB1E3D285B758300EA18C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FB1E3C285B758300EA18C1 /* AppDelegate.swift */; };
 		95FB1E3F285B758300EA18C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FB1E3E285B758300EA18C1 /* SceneDelegate.swift */; };
 		95FB1E41285B758300EA18C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FB1E40285B758300EA18C1 /* ViewController.swift */; };
-		95FB1E44285B758300EA18C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95FB1E42285B758300EA18C1 /* Main.storyboard */; };
 		95FB1E47285B758300EA18C1 /* HelloWord.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95FB1E45285B758300EA18C1 /* HelloWord.xcdatamodeld */; };
 		95FB1E49285B758300EA18C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95FB1E48285B758300EA18C1 /* Assets.xcassets */; };
 		95FB1E4C285B758300EA18C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95FB1E4A285B758300EA18C1 /* LaunchScreen.storyboard */; };
@@ -39,13 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		951BB9B3285B7E1B0086C912 /* CadastreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastreController.swift; sourceTree = "<group>"; };
-		951BB9B5285B7E490086C912 /* Cadastre.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cadastre.storyboard; sourceTree = "<group>"; };
+		95EA530728C8D9200006FD56 /* ReferenceConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceConstraints.swift; sourceTree = "<group>"; };
+		95EA530928C8D94C0006FD56 /* PropertyViewAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewAnimator.swift; sourceTree = "<group>"; };
+		95EA530B28C8D96F0006FD56 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		95EA530D28C8D9850006FD56 /* Gravity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gravity.swift; sourceTree = "<group>"; };
+		95EA530F28C8D9B00006FD56 /* Collision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collision.swift; sourceTree = "<group>"; };
 		95FB1E39285B758300EA18C1 /* HelloWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95FB1E3C285B758300EA18C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95FB1E3E285B758300EA18C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		95FB1E40285B758300EA18C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		95FB1E43285B758300EA18C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95FB1E46285B758300EA18C1 /* HelloWord.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloWord.xcdatamodel; sourceTree = "<group>"; };
 		95FB1E48285B758300EA18C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95FB1E4B285B758300EA18C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -85,27 +89,22 @@
 		951BB9B7285B836A0086C912 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				951BB9B5285B7E490086C912 /* Cadastre.storyboard */,
-				95FB1E42285B758300EA18C1 /* Main.storyboard */,
+				95FB1E40285B758300EA18C1 /* ViewController.swift */,
+				95EA530928C8D94C0006FD56 /* PropertyViewAnimator.swift */,
+				95EA530B28C8D96F0006FD56 /* Snap.swift */,
+				95EA530D28C8D9850006FD56 /* Gravity.swift */,
+				95EA530F28C8D9B00006FD56 /* Collision.swift */,
 				95FB1E4A285B758300EA18C1 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		951BB9B8285B837B0086C912 /* Controller */ = {
+		95EA530628C8D90E0006FD56 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				95FB1E40285B758300EA18C1 /* ViewController.swift */,
-				951BB9B3285B7E1B0086C912 /* CadastreController.swift */,
+				95EA530728C8D9200006FD56 /* ReferenceConstraints.swift */,
 			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		951BB9B9285B83F80086C912 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		95FB1E30285B758300EA18C1 = {
@@ -131,8 +130,7 @@
 		95FB1E3B285B758300EA18C1 /* HelloWord */ = {
 			isa = PBXGroup;
 			children = (
-				951BB9B9285B83F80086C912 /* Model */,
-				951BB9B8285B837B0086C912 /* Controller */,
+				95EA530628C8D90E0006FD56 /* Tools */,
 				951BB9B7285B836A0086C912 /* View */,
 				95FB1E3C285B758300EA18C1 /* AppDelegate.swift */,
 				95FB1E3E285B758300EA18C1 /* SceneDelegate.swift */,
@@ -265,9 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95FB1E4C285B758300EA18C1 /* LaunchScreen.storyboard in Resources */,
-				951BB9B6285B7E490086C912 /* Cadastre.storyboard in Resources */,
 				95FB1E49285B758300EA18C1 /* Assets.xcassets in Resources */,
-				95FB1E44285B758300EA18C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,9 +289,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				95FB1E41285B758300EA18C1 /* ViewController.swift in Sources */,
+				95EA531028C8D9B00006FD56 /* Collision.swift in Sources */,
 				95FB1E3D285B758300EA18C1 /* AppDelegate.swift in Sources */,
+				95EA530A28C8D94C0006FD56 /* PropertyViewAnimator.swift in Sources */,
 				95FB1E47285B758300EA18C1 /* HelloWord.xcdatamodeld in Sources */,
-				951BB9B4285B7E1B0086C912 /* CadastreController.swift in Sources */,
+				95EA530C28C8D96F0006FD56 /* Snap.swift in Sources */,
+				95EA530828C8D9200006FD56 /* ReferenceConstraints.swift in Sources */,
+				95EA530E28C8D9850006FD56 /* Gravity.swift in Sources */,
 				95FB1E3F285B758300EA18C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,14 +333,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		95FB1E42285B758300EA18C1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				95FB1E43285B758300EA18C1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		95FB1E4A285B758300EA18C1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -478,7 +470,6 @@
 				INFOPLIST_FILE = HelloWord/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,7 +497,6 @@
 				INFOPLIST_FILE = HelloWord/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
