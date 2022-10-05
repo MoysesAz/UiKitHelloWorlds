@@ -20,7 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let window = UIWindow(windowScene: windowScene)
 
-        let viewController = HapticsController()
+        let viewController = HapticsViewController()
+        viewController.view.backgroundColor = .white
         let navigation = UINavigationController(rootViewController: viewController)
 
         window.rootViewController = navigation

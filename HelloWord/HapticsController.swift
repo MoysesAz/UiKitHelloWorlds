@@ -3,68 +3,113 @@
 //  HelloWord
 //
 //  Created by Moyses Miranda do Vale Azevedo on 16/06/22.
-//
+//  Updated by Mateus Sales, GitHub MateuSales
 
 import UIKit
 
-class HapticsController: UIViewController {
+enum FeedbackType: String, CaseIterable {
+    case error
+    case success
+    case warning
+    case impactLight = "impact light"
+    case impactMedium = "impact medium"
+    case impactHeavy = "impact heavy"
+}
 
-    var i = 0
+final class HapticsViewController: UIViewController {
 
+    // MARK: Properties for Businness Logic
+
+    private let notificationFeedbackGenerator = UINotificationFeedbackGenerator()
+    private var feedbackTypes: [FeedbackType] = FeedbackType.allCases
+    private var index = 0
+    
+    // MARK: - Layout Properties
+    
+    private let label: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private lazy var button: UIButton = {
+        let button = UIButton(type: .system)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Tap here!", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        button.setTitleColor(.white, for: .normal)
+        button.layer.cornerRadius = 12
+        button.backgroundColor = .black
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        return button
+    }()
+
+    // MARK: - Life Cycle Views
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .white
-
-        let btn = UIButton()
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(btn)
-
-        btn.widthAnchor.constraint(equalToConstant: 128).isActive = true
-        btn.heightAnchor.constraint(equalToConstant: 128).isActive = true
-        btn.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        btn.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-
-        btn.setTitle("Clique Aqui!", for: .normal)
-        btn.setTitleColor(UIColor.black, for: .normal)
-        btn.addTarget(self, action: #selector(tapped), for: .touchUpInside)
+        addViewsInHierarchy()
+        setupConstraints()
     }
+    
+    // MARK: - Actions
 
-    @objc func tapped() {
-        i += 1
-        print("Running \(i)")
-
-        switch i {
-        case 1:
-            let generator = UINotificationFeedbackGenerator()
-            generator.notificationOccurred(.error)
-
-        case 2:
-            let generator = UINotificationFeedbackGenerator()
-            generator.notificationOccurred(.success)
-
-        case 3:
-            let generator = UINotificationFeedbackGenerator()
-            generator.notificationOccurred(.warning)
-
-        case 4:
-            let generator = UIImpactFeedbackGenerator(style: .light)
-            generator.impactOccurred()
-
-        case 5:
-            let generator = UIImpactFeedbackGenerator(style: .medium)
-            generator.impactOccurred()
-
-        case 6:
-            let generator = UIImpactFeedbackGenerator(style: .heavy)
-            generator.impactOccurred()
-
-        default:
-            let generator = UISelectionFeedbackGenerator()
-            generator.selectionChanged()
-            i = 0
+    @objc
+    func buttonTapped() {
+        let currentFeedbackType = feedbackTypes[index]
+        label.text = "Feedback for: \(currentFeedbackType.rawValue)"
+        
+        switch currentFeedbackType {
+        case .error:
+            notificationFeedbackGenerator.notificationOccurred(.error)
+        case .success:
+            notificationFeedbackGenerator.notificationOccurred(.success)
+        case .warning:
+            notificationFeedbackGenerator.notificationOccurred(.warning)
+        case .impactLight:
+            makeImpact(style: .light)
+        case .impactMedium:
+            makeImpact(style: .medium)
+        case .impactHeavy:
+            makeImpact(style: .heavy)
+        }
+        
+        index += 1
+        resetIndexIfNeeded()
+    }
+    
+    // MARK: - Layout Methods
+    
+    private func addViewsInHierarchy() {
+        view.addSubview(button)
+        view.addSubview(label)
+    }
+    
+    private func setupConstraints() {
+        NSLayoutConstraint.activate([
+            button.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            button.heightAnchor.constraint(equalToConstant: 58),
+            button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            
+            label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60),
+            label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
+        ])
+    }
+    
+    // MARK: - Private Methods
+    
+    private func makeImpact(style: UIImpactFeedbackGenerator.FeedbackStyle) {
+        let impactFeedbackGenerator = UIImpactFeedbackGenerator(style: style)
+        impactFeedbackGenerator.impactOccurred()
+    }
+    
+    private func resetIndexIfNeeded() {
+        if index >= feedbackTypes.count {
+            index = 0
         }
     }
 }
-
-
